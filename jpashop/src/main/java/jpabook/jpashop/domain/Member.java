@@ -16,7 +16,7 @@ public class Member {
     @Column(name = "member_id")
     private Long id;
 
-    @NotEmpty
+//    @NotEmpty
     private String name;
 
     @Embedded   // 내장 타입임을 표시
