@@ -16,7 +16,7 @@ public class Delivery {
     @Column(name = "delivery_id")
     private Long id;
 
-    @JsonIgnore
+    @JsonIgnore // 양방향이 걸려있는 건 하나만 JsonIgnore를 해야 한다.
     @OneToOne(mappedBy = "delivery", fetch = LAZY)
     private Order order;
 
